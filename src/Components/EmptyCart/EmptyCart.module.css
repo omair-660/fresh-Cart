@@ -1,0 +1,120 @@
+.emptycartcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 3px dashed #17a2b81f
+}
+
+.carticon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 3.5px double;
+  padding: 23px;
+  border-radius: 30px;
+}
+
+.carteyes {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.carteyes::after,.carteyes::before{
+  content: "";
+  position: absolute;
+  width: 17px;
+  top: -11px;
+  transform: rotate(-27deg);
+  height: 8px;
+  border: 4px solid #333;
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 25px 25px;
+}
+.carteyes::before{
+  transform: rotate(27deg);
+  right: 0;
+}
+.eye {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.eye::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 7px;
+  width: 25px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 1px 1px 83px 14px #ffa9a9;
+}
+
+.cartbody {
+  width: 60px;
+  height: 26px;
+  border: 4px solid #333;
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px 25px 0 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.returnbutton {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 2px solid #17a2b8;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+
+.returnbutton:hover {
+  color: white;
+  background-color: #17a2b8;
+  transform: scale(1.05); 
+}
+.returnbutton:active {
+  transform: scale(0.98); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}

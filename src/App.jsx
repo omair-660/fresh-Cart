@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LayOut from "./Components/LayOut/LayOut";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
@@ -37,8 +37,7 @@ function App() {
       path: "",
       element: <LayOut />,
       children: [
-        { path: "", element: <Navigate to="/home" replace /> },
-        { path: "home", element: <Home /> },
+        { path: "", element: <Home /> },
         { path: "productdetail/:id/:category", element: <ProtectedRoute><Productdetail/> </ProtectedRoute>},
         { path: "cart", element: <ProtectedRoute><Cart/> </ProtectedRoute>},
         { path: "wishList", element: <ProtectedRoute><WishList/> </ProtectedRoute>},

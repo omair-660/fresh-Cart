@@ -34,10 +34,11 @@ function App() {
 
   let x = createBrowserRouter([
     {
-      path: "",
+      path: "/eCommerce",
       element: <LayOut />,
       children: [
         { path: "", element: <Home /> },
+        { path: "home", element: <Home/>},
         { path: "productdetail/:id/:category", element: <ProtectedRoute><Productdetail/> </ProtectedRoute>},
         { path: "cart", element: <ProtectedRoute><Cart/> </ProtectedRoute>},
         { path: "wishList", element: <ProtectedRoute><WishList/> </ProtectedRoute>},

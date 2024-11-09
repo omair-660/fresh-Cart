@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -21,7 +21,7 @@ export default function NavBar() {
   return (
     <>
       <marquee className="w-100 bg-danger-subtle p-2 fs-5">
-        E-Commerece Website front-end by omair mohamed && Back-end with Route
+      Shop the best products at unbeatable prices!
       </marquee>
      
       <Navbar expand="lg" className="bg-body-tertiary border-bottom position-sticky top-0 w-100 z-3">

@@ -2,7 +2,7 @@
   "name": "review",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://omair-660.github.io/eCommerce",
+  "homepage": "https://github.com/omair-660/eCommerce",
   "type": "module",
   "scripts": {
     "dev": "vite",

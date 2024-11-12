@@ -40,7 +40,7 @@ export default function Contact() {
                       </Form.Group>
                     </Col>
                     <Col md={4}>
-                      <Form.Group controlId="email">
+                      <Form.Group className="my-3" controlId="email">
                         <Form.Control type="email" placeholder="Your Email *" />
                       </Form.Group>
                     </Col>

@@ -129,7 +129,7 @@ export default function Cart() {
                         className="me-2"
                       />
                       {cartItem.product.title}
-                      <td>{cartItem.product.brand.name}</td>
+                      <td>{cartItem.product.brand?.name}</td>
                     </Link>
                   </td>
                   <td>

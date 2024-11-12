@@ -377,3 +377,27 @@ section{
   background-color: #d3ffcd;
   color: #333;
 }
+.scroll{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #a8220e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  animation: btn 1s ease-in-out;
+}
+.scroll:hover{
+  transform: scale(1.1);
+}
+@keyframes btn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

@@ -34,7 +34,6 @@ function App() {
 
   let x = createBrowserRouter([
     {
-      path: "/eCommerce",
       element: <LayOut />,
       children: [
         { path: "", element: <Home /> },

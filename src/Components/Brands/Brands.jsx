@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Alert, Button, Modal } from "react-bootstrap";
 import Skeleton from "react-loading-skeleton";
 import Loading from "../Loading/Loading";
 
@@ -9,7 +9,7 @@ export default function Brands() {
   const [oneBrand, setoneBrand] = useState(null);
   const [isLoadinBrand, setisLoadinBrand] = useState(false);
   const [isLoadinBrands, setisLoadinBrands] = useState(false);
-
+  const [noBrands, setNoBrands] = useState(null)
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -21,6 +21,12 @@ export default function Brands() {
       console.log(res);
       setisLoadinBrands(false);
       setallBrands(res.data.data);
+      if (res.data.data.length === 0) {
+        setNoBrands('No brands available');
+      } else {
+        setallBrands(res.data.data);
+        setNoBrands(null);
+      }
     });
   }
 
@@ -41,6 +47,14 @@ export default function Brands() {
   return (
     <>
     <section>
+    <div className="container mt-5">
+      {noBrands ? (
+        <Alert variant="warning" className="d-flex align-items-center">
+         <i className="fa-solid fa-triangle-exclamation me-2"></i>
+          {noBrands}
+        </Alert>
+      ) : null}
+    </div>
     <div className="container">
         <div className="row">
           {isLoadinBrands ? (
